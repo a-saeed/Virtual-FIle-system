@@ -7,8 +7,6 @@ public class ContiguousAllocation implements ICommands {
 
     ArrayList<Boolean> blocks;
     Directory root;
-    PriorityQueue<>
-
 
     ContiguousAllocation()
     {
