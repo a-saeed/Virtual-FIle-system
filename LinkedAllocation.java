@@ -1,6 +1,7 @@
 package com;
 
 public class LinkedAllocation implements  ICommands {
+
     @Override
     public void createFile(int size, String[] path, int pLength) {
 

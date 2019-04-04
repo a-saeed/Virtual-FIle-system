@@ -1,6 +1,21 @@
 package com;
 
-public class ContiguousAllocation implements ICommands
+import java.util.ArrayList;
+import java.util.PriorityQueue;
+
+public class ContiguousAllocation implements ICommands {
+
+    ArrayList<Boolean> blocks;
+    Directory root;
+    PriorityQueue<>
+
+
+    ContiguousAllocation()
+    {
+        blocks= new ArrayList<Boolean>(100);
+        root=new Directory("root");
+    }
+
 
 
     @Override
