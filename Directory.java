@@ -1,8 +1,13 @@
 package com;
 
+import java.util.ArrayList;
+
 public class Directory {
-    private String directoryPath;
-    private File[] files;
-    private  Directory [] subdirectories;
-    private boolean deleted=false;
+    private String Dname;
+    private ArrayList<File> files;
+    private  ArrayList<Directory> subdirectories;
+
+    public Directory(String root) {
+        Dname=root;
+    }
 }

@@ -1,7 +1,8 @@
 package com;
 
+import java.util.ArrayList;
+
 public class File {
-    private String filePath;
-    private int[] allocatedBlocks;
-    private  boolean deleted;
+    private String fName;
+    private ArrayList<Integer> allocatedBlocks;
 }
