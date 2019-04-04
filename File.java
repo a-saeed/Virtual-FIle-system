@@ -3,6 +3,8 @@ package com;
 import java.util.ArrayList;
 
 public class File {
-    private String fName;
-    private ArrayList<Integer> allocatedBlocks;
+    public String fName;
+    public ArrayList<Integer> allocatedBlocks;
+    public  int size;
+
 }
