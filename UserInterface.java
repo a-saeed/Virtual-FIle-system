@@ -46,34 +46,36 @@ public class UserInterface {
         {
             if(commands[0].equals("DisplayDiskStatus"))
             {
-                //root.DisplayDiskStatus();
+                l.displayDiskStatus();
             }
             else if(commands[0].equals("DisplayDiskStructure"))
             {
-               // root.DisplayDiskStructure();
+               l.displayDiskStructure(l.root,"");
+            }
+            else
+            {
+                System.out.println("Invalid command");
             }
         }
         else
         {
-            String functoion = commands[0];
+            String function = commands[0];
             String path [] = commands[1].split("/");
-            if(functoion.equals("CreateFile"))
+            if(function.equals("CreateFile"))
             {
                 int size = Integer.valueOf(commands[length-1]);
 
                 l.createFile(size,path,path.length);
-
-                System.out.println(size);
             }
-            else if (functoion.equals("CreateFolder"))
+            else if ( (commands.length ==2) && (function.equals("CreateFolder") ) )
             {
                 l.createFolder(path,path.length);
             }
+            else
+            {
+                System.out.println("Invalid command");
+            }
         }
     }
-
-
     }
-
-
 }

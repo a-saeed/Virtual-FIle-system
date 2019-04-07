@@ -37,12 +37,12 @@ public class ContiguousAllocation implements ICommands {
     }
 
     @Override
-    public void displayDiskStatus(Directory root) {
+    public void displayDiskStatus() {
 
     }
 
     @Override
-    public void displayDiskStructure(Directory root) {
+    public void displayDiskStructure(Directory root, String indent) {
 
     }
 }
